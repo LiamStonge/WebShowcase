@@ -1,0 +1,38 @@
+{
+  "lint": {
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "src/fixtures/**/*.ts"],
+    "rules": {
+      "tags": ["recommended"],
+      "include": ["ban-untagged-todo"],
+      "exclude": ["no-unused-vars"]
+    }
+  },
+  "fmt": {
+    "useTabs": false,
+    "lineWidth": 80,
+    "indentWidth": 4,
+    "semiColons": true,
+    "singleQuote": true,
+    "proseWrap": "preserve",
+    "include": ["src/"],
+    "exclude": ["src/testdata/", "src/fixtures/**/*.ts"]
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "unstable": [
+    "sloppy-imports"
+  ],
+  "tasks": {
+    "lint": "deno lint",
+    "dev-check": {
+      "command": "deno run dev",
+      "dependencies": ["lint"]
+    },
+    "build": {
+      "command": "tsc -b && vite build",
+      "dependencies": ["lint"]
+    }
+  }
+}
