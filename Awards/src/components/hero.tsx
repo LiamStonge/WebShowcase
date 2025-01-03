@@ -11,6 +11,7 @@ const Hero = () => {
     const totalVideos = 3;
 
     const upcomingVideoIndex = (currentIndex % totalVideos) + 1;
+    const lastVideo = currentIndex == totalVideos - 1 ? 1 : currentIndex;
 
     const handleMiniVdClick = () => {
         setHasClicked(true);
@@ -40,12 +41,45 @@ const Hero = () => {
                                 loop
                                 muted
                                 ref={nextVideodRef}
-                                src={getVideoSource(currentIndex + 1)}
+                                src={getVideoSource(upcomingVideoIndex)}
                                 id='current-video'
                                 className='size-64 origin-center scale-150 object-cover object-center'
                                 onLoadedData={handleVideoLoad}
                             />
                         </div>
+                    </div>
+                    <video
+                        ref={nextVideodRef}
+                        src={getVideoSource(currentIndex)}
+                        loop
+                        muted
+                        id='next-video'
+                        className='absolute-center invisible absolute z-20 size-64 object-cover object-center'
+                        onLoadedData={handleVideoLoad}
+                    />
+                    <video
+                        src={getVideoSource(lastVideo)}
+                        autoPlay
+                        loop
+                        muted
+                        id='background-video'
+                        className='absolute left-0 top-0 size-full object-cover object-center'
+                        onLoadedData={handleVideoLoad}
+                    />
+                </div>
+                <h1 className='special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75'>
+                    G<b>a</b>ming
+                </h1>
+
+                <div className='absolute left-0 top-0 z-40 size-full'>
+                    <div className='mt-24 px-5 sm:px-10'>
+                        <h1 className='special-font hero-heading text-blue-100'>
+                            redefi<b>n</b>
+                        </h1>
+                        <p className='mb-5 max-w-64 font-robert-regular text-blue-100'>
+                            Enter the Metagame Layer <br />{' '}
+                            Unleash the Play Economy
+                        </p>
                     </div>
                 </div>
             </div>
