@@ -2,16 +2,21 @@
   "version": "4",
   "specifiers": {
     "npm:@eslint/js@^9.17.0": "9.17.0",
+    "npm:@gsap/react@^2.1.1": "2.1.1",
+    "npm:@types/gsap@3": "3.0.0",
     "npm:@types/react-dom@^18.3.5": "18.3.5_@types+react@18.3.18",
     "npm:@types/react@^18.3.18": "18.3.18",
+    "npm:@types/react@^19.0.2": "19.0.2",
     "npm:@vitejs/plugin-react@^4.3.4": "4.3.4_vite@6.0.6_@babel+core@7.26.0",
     "npm:autoprefixer@^10.4.20": "10.4.20_postcss@8.4.49",
     "npm:eslint-plugin-react-hooks@5": "5.1.0_eslint@9.17.0",
     "npm:eslint-plugin-react-refresh@~0.4.16": "0.4.16_eslint@9.17.0",
     "npm:eslint@^9.17.0": "9.17.0",
     "npm:globals@^15.14.0": "15.14.0",
+    "npm:gsap@^3.12.5": "3.12.5",
     "npm:postcss@^8.4.49": "8.4.49",
     "npm:react-dom@^18.3.1": "18.3.1_react@18.3.1",
+    "npm:react-icons@^5.4.0": "5.4.0_react@18.3.1",
     "npm:react@^18.3.1": "18.3.1",
     "npm:tailwindcss@^3.4.17": "3.4.17_postcss@8.4.49",
     "npm:typescript-eslint@^8.18.2": "8.19.0_eslint@9.17.0_typescript@5.6.3_@typescript-eslint+parser@8.19.0__eslint@9.17.0__typescript@5.6.3",
@@ -287,6 +292,13 @@
         "levn"
       ]
     },
+    "@gsap/react@2.1.1": {
+      "integrity": "sha512-apGPRrmpqxvl1T6Io1KgT8tFU+IuACI6z4zmT7t8+PASserJeLVRFJdSNUFA2Xb/eVkZI1noE8LIrY/w/oJECw==",
+      "dependencies": [
+        "gsap",
+        "react"
+      ]
+    },
     "@humanfs/core@0.19.1": {
       "integrity": "sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA=="
     },
@@ -450,6 +462,12 @@
     "@types/estree@1.0.6": {
       "integrity": "sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw=="
     },
+    "@types/gsap@3.0.0": {
+      "integrity": "sha512-BbWLi4WRHGze4C8NV7U7yRevuBFiPkPZZyGa0rryanvh/9HPUFXTNBXsGQxJZJq7Ix7j4RXMYodP3s+OsqCErg==",
+      "dependencies": [
+        "gsap"
+      ]
+    },
     "@types/json-schema@7.0.15": {
       "integrity": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA=="
     },
@@ -459,13 +477,19 @@
     "@types/react-dom@18.3.5_@types+react@18.3.18": {
       "integrity": "sha512-P4t6saawp+b/dFrUr2cvkVsfvPguwsxtH6dNIYRllMsefqFzkZk5UIjzyDOv5g1dXIPdG4Sp1yCR4Z6RCUsG/Q==",
       "dependencies": [
-        "@types/react"
+        "@types/react@18.3.18"
       ]
     },
     "@types/react@18.3.18": {
       "integrity": "sha512-t4yC+vtgnkYjNSKlFx1jkAhH8LgTo2N/7Qvi83kdEaUtMDiwpbLAktKDaAMlRcJ5eSxZkH74eEGt1ky31d7kfQ==",
       "dependencies": [
         "@types/prop-types",
+        "csstype"
+      ]
+    },
+    "@types/react@19.0.2": {
+      "integrity": "sha512-USU8ZI/xyKJwFTpjSVIrSeHBVAGagkHQKPNbxeWwql/vDmnTIBgx+TJnhFnj1NXgz8XfprU0egV2dROLGpsBEg==",
+      "dependencies": [
         "csstype"
       ]
     },
@@ -979,6 +1003,9 @@
     "graphemer@1.4.0": {
       "integrity": "sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag=="
     },
+    "gsap@3.12.5": {
+      "integrity": "sha512-srBfnk4n+Oe/ZnMIOXt3gT605BX9x5+rh/prT2F1SsNJsU1XuMiP0E2aptW481OnonOGACZWBqseH5Z7csHxhQ=="
+    },
     "has-flag@4.0.0": {
       "integrity": "sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ=="
     },
@@ -1291,6 +1318,12 @@
         "scheduler"
       ]
     },
+    "react-icons@5.4.0_react@18.3.1": {
+      "integrity": "sha512-7eltJxgVt7X64oHh6wSWNwwbKTCtMfK35hcjvJS0yxEAhPM8oUKdS3+kqaW1vicIltw+kR2unHaa12S9pPALoQ==",
+      "dependencies": [
+        "react"
+      ]
+    },
     "react-refresh@0.14.2": {
       "integrity": "sha512-jCvmsr+1IUSMUyzOkRcvnVbX3ZYC6g9TDrDbFuFmRDq7PD4yaGbLKNQL6k2jnArV8hjYxh7hVhAZB6s9HDGpZA=="
     },
@@ -1571,20 +1604,90 @@
       "integrity": "sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q=="
     }
   },
+  "remote": {
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ai@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ai@1.0.9/mod.ts": "50d19a15dd5b23d81fc5b3eea0156a1dc587ce89dbfdf7ef2722cfb9fc3dd344",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-bi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-bi@1.0.9/mod.ts": "9ca10e7412194ea6a030d7be7f67f6e8ebe45b61f92c8745dda3a7108cc1ac31",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-bs@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-bs@1.0.9/mod.ts": "b424ee7b2238fe10aa35276cfd8883d080edac746b7f2a4a2e56911b55240803",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-cg@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-cg@1.0.9/mod.ts": "f617a26c8c0e7e75e34d5b4ff65ef1ee7986a8f2ecc3b48a39c0fbb1f9042ad7",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ci@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ci@1.0.9/mod.ts": "e0081a6e677789ab0db4a11172a7060d0466ec6a1acee1cfd2e2af9e206e090e",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-di@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-di@1.0.9/mod.ts": "66ea81717324a29e44d3a399e9dc72453514d64d8d172297d257af5ca5d17524",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fa@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fa@1.0.9/mod.ts": "58cfedaf7fa5439d7c93d165589538c63579a7e2ea1e20b40a07a6c500ad68d9",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fc@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fc@1.0.9/mod.ts": "e6932bf9cba21bfe72af3e3189bdc9aa560b50c7312f9c50dd059f43250e6053",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-fi@1.0.9/mod.ts": "e5496b8a944192aea59c65b259260b9f62ed557c446993c2fc2ac91020dc48e7",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-gi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-gi@1.0.9/mod.ts": "13bebd0caffdf91d92f5b9f5f55b217b009c61e92d01d1baca5ef11aa0f97b85",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-go@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-go@1.0.9/mod.ts": "de57b6a60b22277f727d33bce4a496e402396653166155e16758d811b5114ab9",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-gr@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-gr@1.0.9/mod.ts": "6c22247d8ac9d961adc6f2373bd7b2d791127ff040d37f2eb6f2cd030c853272",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-hi2@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-hi2@1.0.9/mod.ts": "13d09adfeb6870900a28ec68b6551b67f170efecbbba8189b05218b83f38d56e",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-hi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-hi@1.0.9/mod.ts": "27a4b51616a17cd414e0d4153411df997f2d29f56db6bb51083c435b5a3f5e59",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-im@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-im@1.0.9/mod.ts": "52ea14ca1410dfca484a470d8729dcf4175b7afe6586da2596ee4db6a5ba7419",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-io5@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-io5@1.0.9/mod.ts": "e1a3fcd3783616ee79c57c4b5a1bcc059e431b92b4fdec4e9c4ee0a3803f7bff",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-io@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-io@1.0.9/mod.ts": "4ff053c1f45c692f74b196480ad58c9c007d4e2a6da6d80d4ff867954f66c38e",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-lu@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-lu@1.0.9/mod.ts": "b6a5758613cbdc23563ad2dad17e165389be28307b4afde9dc81a79f2479ccde",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-md@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-md@1.0.9/mod.ts": "2cea4b838d89cbeaae3ee8e38b175736711fcd18cf561291d6104ad072d74455",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ri@1.0.9/deps.ts": "ab5f0e2125406415facd03d9e2be53a44a5c614e7fe9f4ca0c4fdb6bc562214d",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ri@1.0.9/mod.ts": "0d48324d032d6f59ecc8441c9aeccd328153234c9a9d4d905e5c56b6cbbe717e",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-rx@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-rx@1.0.9/mod.ts": "abfc28a07524ac07f83497894cec831147fdc71209f69fcbd120de8b8d091745",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-si@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-si@1.0.9/mod.ts": "3adb7f8363a479b9dc22654d7ede85abbc7e00e3f31ee14a81a167e3574b62a8",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-sl@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-sl@1.0.9/mod.ts": "5b3035d026d7aad34b3e0f5471cef219b97614bdf00785548c8816e6da3f3695",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-tb@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-tb@1.0.9/mod.ts": "56aaacb80dc620b36228047c7c37a9593a043a323c1bae2716b4ba30f9f47d60",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-tfi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-tfi@1.0.9/mod.ts": "14580a6eb0c20bf765119cff9483578c7da0084cdc6291cc4a5198e02c5eca37",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ti@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-ti@1.0.9/mod.ts": "daf82c695c05095b2814188ba29677beeef3d2459df8433d2988d13002a47476",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-vsc@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-vsc@1.0.9/mod.ts": "9becf19512bd98a2a95ccb1df30d2bd089dffddd54557ab016ede5faef90bfb8",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-wi@1.0.9/deps.ts": "68cc4a569fad45a5956728ed79ee74b1290671aa8d048594b3256019a8da037f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons-wi@1.0.9/mod.ts": "23b7bae438d66b478d8f5025a7128e6a5d10f735684de93333f967cfa326fcbe",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.8/lib/iconBase.tsx": "8ae4746f8fbe5e4e00bfe448e38876a6c5d0ca7edf0846b917b971bec5beaa6c",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.8/lib/iconContext.ts": "a3ef1f1821598622472bf8aea52eaa4fdc7d27149e1757d569e1dc1e3f34d49f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.8/mod.ts": "faf8cbd7915c6b120c32649ba025c79a0207cbf71bac015eb8206336bd4a1a22",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.9/lib/iconBase.tsx": "8ae4746f8fbe5e4e00bfe448e38876a6c5d0ca7edf0846b917b971bec5beaa6c",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.9/lib/iconContext.ts": "a3ef1f1821598622472bf8aea52eaa4fdc7d27149e1757d569e1dc1e3f34d49f",
+    "https://cdn.jsdelivr.net/gh/urielch/react-icons@1.0.9/mod.ts": "d92139aae32ee4c92272281d2061babb4367c6ce715f48921ae8884270fd709a",
+    "https://esm.sh/preact@10.15.1": "796ac5b6d7b4c71b1eba2e60dee47d3a7c639d99b546b35902af6405e845cf5a",
+    "https://esm.sh/stable/preact@10.15.1/denonext/preact.mjs": "30710ac1d5ff3711ae0c04eddbeb706f34f82d97489f61aaf09897bc75d2a628"
+  },
   "workspace": {
     "packageJson": {
       "dependencies": [
         "npm:@eslint/js@^9.17.0",
+        "npm:@gsap/react@^2.1.1",
+        "npm:@types/gsap@3",
         "npm:@types/react-dom@^18.3.5",
-        "npm:@types/react@^18.3.18",
+        "npm:@types/react@^19.0.2",
         "npm:@vitejs/plugin-react@^4.3.4",
         "npm:autoprefixer@^10.4.20",
         "npm:eslint-plugin-react-hooks@5",
         "npm:eslint-plugin-react-refresh@~0.4.16",
         "npm:eslint@^9.17.0",
         "npm:globals@^15.14.0",
+        "npm:gsap@^3.12.5",
         "npm:postcss@^8.4.49",
         "npm:react-dom@^18.3.1",
+        "npm:react-icons@^5.4.0",
         "npm:react@^18.3.1",
         "npm:tailwindcss@^3.4.17",
         "npm:typescript-eslint@^8.18.2",

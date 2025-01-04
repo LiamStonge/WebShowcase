@@ -19,7 +19,8 @@
     "exclude": ["src/testdata/", "src/fixtures/**/*.ts"]
   },
   "compilerOptions": {
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
   "unstable": [
     "sloppy-imports"
