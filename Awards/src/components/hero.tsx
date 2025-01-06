@@ -3,7 +3,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger.js';
 import { useEffect, useRef, useState } from 'react';
 import { TiLocationArrow } from 'react-icons/ti';
-import Button from './button.tsx';
+import Button from './Button.tsx';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,6 +37,8 @@ const Hero = () => {
     };
 
     const handleBackgroundVideoLoad = () => {
+        setLoadedVideos((prev) => prev + 1);
+
         if (backgroundVideoRef.current) {
             backgroundVideoRef.current.pause(); // Pause the background video
             backgroundVideoRef.current.currentTime =
