@@ -2,6 +2,7 @@ const Button = (props: {
     title: string;
     id: string;
     leftIcon?: React.JSX.Element;
+    rightIcon?: React.JSX.Element;
     containerClassName: string;
 }) => {
     return (
@@ -15,6 +16,7 @@ const Button = (props: {
                     {props.title}
                 </div>
             </span>
+            {props.rightIcon}
         </button>
     );
 };

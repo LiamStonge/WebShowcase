@@ -59,7 +59,9 @@ const Hero = () => {
                 height: '100%',
                 duration: 1,
                 ease: 'power1.inOut',
-                onStart: () => nextVideodRef?.current?.play(),
+                onStart: () => {
+                    nextVideodRef?.current?.play();
+                },
                 onComplete: () => {
                     console.log('on end');
                     setbackgroundIndex(currentIndex);
