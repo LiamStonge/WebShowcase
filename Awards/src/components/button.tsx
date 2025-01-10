@@ -1,7 +1,6 @@
 const Button = (props: {
     title: string;
     id: string;
-    rightIcon: React.JSX.Element;
     leftIcon?: React.JSX.Element;
     containerClassName: string;
 }) => {

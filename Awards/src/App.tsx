@@ -2,6 +2,7 @@ import About from './components/About.tsx';
 import { FeatureData, Features } from './components/Features.tsx';
 import Hero from './components/Hero.tsx';
 import Navbar from './components/Navbar.tsx';
+import Story from './components/Story.tsx';
 
 const navItems = ['Nexus', 'Vault', 'Prologue', 'about', 'contact'];
 
@@ -59,6 +60,7 @@ const App = () => {
             <Hero />
             <About />
             <Features {...MyFeatureData} />
+            <Story />
         </main>
     );
 };

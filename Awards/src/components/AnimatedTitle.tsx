@@ -1,7 +1,9 @@
 import gsap from 'gsap';
 import { useEffect, useRef } from 'react';
 
-const AnimatedTitle = (props: { title: string; containerClass: string }) => {
+const AnimatedTitle = (
+    props: { title: string; sectionId: string; containerClass: string },
+) => {
     const containerRef = useRef(null);
 
     useEffect(() => {
@@ -28,6 +30,7 @@ const AnimatedTitle = (props: { title: string; containerClass: string }) => {
 
     return (
         <div
+            id={props.sectionId}
             ref={containerRef}
             className={`animated-title ${props.containerClass}`}
         >
